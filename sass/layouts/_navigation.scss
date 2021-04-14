@@ -1,0 +1,90 @@
+.navbar {
+  position: absolute;
+  width: 100%;
+  padding: 2rem;
+  background-color: rgba($color-black, 0.85);
+  transform-origin: right;
+  transition: all 0.3s ease-in;
+  @media only screen and (max-width: 600px) {
+    transform: scaleX(0);
+    width: 50%;
+    top: 1.5rem;
+    right: 1.5rem;
+    border-radius: 1rem;
+    padding: 4rem;
+  }
+  &.clicked {
+    transform: scaleX(1);
+  }
+
+  &_icon {
+    // background-color: $color-secondary;
+    padding: 1rem;
+    border-radius: 1rem;
+    z-index: 100;
+    position: fixed;
+    font-size: 4rem;
+    color: $color-primary-1;
+    display: none;
+    top: 1rem;
+    right: 2.5rem;
+    transition: all 0.2s ease-in-out;
+    @media only screen and (max-width: 600px) {
+      display: inline-block;
+    }
+    &.clicked {
+      transform: rotate(45deg);
+      color: rgba($color-primary-1, 0.5);
+    }
+  }
+  &_logo {
+    z-index: 100;
+    width: 20rem;
+    position: fixed;
+    top: 2rem;
+    left: 2.5rem;
+    // margin-right: auto;
+  }
+  &_list {
+    list-style: none;
+    margin-left: auto;
+    display: flex;
+    justify-content: flex-end;
+    @media only screen and (max-width: 600px) {
+      flex-direction: column;
+    }
+  }
+  &_item {
+    &:not(:last-child) {
+      margin-right: 2rem;
+      @media only screen and (max-width: 700px) {
+        margin-right: 1.5rem;
+      }
+      @media only screen and (max-width: 600px) {
+        margin-bottom: 1.5rem;
+        border-bottom: 1px solid $color-white;
+      }
+    }
+  }
+  &_link {
+    &,
+    &:link,
+    &:visited {
+      color: $color-white;
+      font-size: 1.5rem;
+      text-decoration: none;
+      transition: all 0.2s;
+      font: 700;
+    }
+
+    &:hover {
+      color: $color-primary-1;
+    }
+
+    &:active,
+    &:focus {
+      outline: none;
+      color: $color-primary-1;
+    }
+  }
+}

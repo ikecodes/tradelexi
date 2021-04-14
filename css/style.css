@@ -1,0 +1,267 @@
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem); }
+  80% {
+    transform: translateX(3rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem); }
+  80% {
+    transform: translateX(-3rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(5rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+    box-shadow: none; }
+  0% {
+    transform: scale(1.05);
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+  100% {
+    transform: scale(1);
+    box-shadow: none; } }
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 50%; } }
+
+body {
+  background-color: #fff;
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+  line-height: 1.6; }
+
+::selection {
+  background-color: #fe9900;
+  color: #fff; }
+
+.heading-1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400; }
+
+.heading-1 {
+  font-size: 4.5rem;
+  color: #000;
+  line-height: 1; }
+  @media only screen and (max-width: 25em) {
+    .heading-1 {
+      font-size: 3.5rem; } }
+
+.u-centre-text {
+  text-align: center !important; }
+
+.mt-sm {
+  margin-top: 2rem !important; }
+
+.mb-sm {
+  margin-bottom: 2rem !important; }
+
+.mb-md {
+  margin-bottom: 3rem !important; }
+
+.mb-lg {
+  margin-bottom: 4rem !important; }
+
+.mb-hg {
+  margin-bottom: 8rem !important; }
+
+.mt-hg {
+  margin-top: 8rem !important; }
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0; }
+
+input[type='color'],
+input[type='date'],
+input[type='datetime'],
+input[type='datetime-local'],
+input[type='email'],
+input[type='month'],
+input[type='number'],
+input[type='password'],
+input[type='search'],
+input[type='tel'],
+input[type='text'],
+input[type='time'],
+input[type='url'],
+input[type='week'],
+select:focus,
+textarea {
+  font-size: 16px !important; }
+
+.btn, .btn:link, .btn:visited {
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 1.5rem 4rem;
+  display: inline-block;
+  border-radius: 10rem;
+  transition: all 0.2s;
+  position: relative;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.6rem;
+  border: none;
+  cursor: pointer; }
+  @media only screen and (max-width: 37.5em) {
+    .btn, .btn:link, .btn:visited {
+      padding: 1rem 2rem;
+      font-size: 1rem; } }
+  @media only screen and (max-width: 25em) {
+    .btn, .btn:link, .btn:visited {
+      padding: 1rem 2rem;
+      font-size: 1rem; } }
+
+.btn:hover {
+  transform: translateY(-0.3rem);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+  .btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0; }
+
+.btn:active, .btn:focus {
+  outline: none;
+  transform: translateY(-0.1rem);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+
+.btn--gold {
+  background-color: #28b485;
+  color: #fff; }
+  .btn--gold::after {
+    background-color: #28b485; }
+
+.btn::after {
+  content: '';
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+  border-radius: 10rem;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.3s; }
+
+.btn--animated {
+  animation: moveInBottom 0.75s ease-out;
+  animation-fill-mode: backwards; }
+
+.btn-head, .btn-head:link, .btn-head:visited {
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 1.5rem 4rem;
+  display: inline-block;
+  border-radius: 10rem;
+  transition: all 0.2s;
+  position: relative;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.6rem;
+  background-color: #2998ff;
+  color: #fff;
+  border: none;
+  cursor: pointer; }
+  @media only screen and (max-width: 25em) {
+    .btn-head, .btn-head:link, .btn-head:visited {
+      padding: 1rem 2rem;
+      font-size: 1.5rem; } }
+
+.btn-head:active, .btn-head:hover, .btn-head:focus {
+  outline: none;
+  background-color: #5643fa; }
+
+.navbar {
+  position: absolute;
+  width: 100%;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.85);
+  transform-origin: right;
+  transition: all 0.3s ease-in; }
+  @media only screen and (max-width: 600px) {
+    .navbar {
+      transform: scaleX(0);
+      width: 50%;
+      top: 1.5rem;
+      right: 1.5rem;
+      border-radius: 1rem;
+      padding: 4rem; } }
+  .navbar.clicked {
+    transform: scaleX(1); }
+  .navbar_icon {
+    padding: 1rem;
+    border-radius: 1rem;
+    z-index: 100;
+    position: fixed;
+    font-size: 4rem;
+    color: #fe9900;
+    display: none;
+    top: 1rem;
+    right: 2.5rem;
+    transition: all 0.2s ease-in-out; }
+    @media only screen and (max-width: 600px) {
+      .navbar_icon {
+        display: inline-block; } }
+    .navbar_icon.clicked {
+      transform: rotate(45deg);
+      color: rgba(254, 153, 0, 0.5); }
+  .navbar_logo {
+    z-index: 100;
+    width: 20rem;
+    position: fixed;
+    top: 2rem;
+    left: 2.5rem; }
+  .navbar_list {
+    list-style: none;
+    margin-left: auto;
+    display: flex;
+    justify-content: flex-end; }
+    @media only screen and (max-width: 600px) {
+      .navbar_list {
+        flex-direction: column; } }
+  .navbar_item:not(:last-child) {
+    margin-right: 2rem; }
+    @media only screen and (max-width: 700px) {
+      .navbar_item:not(:last-child) {
+        margin-right: 1.5rem; } }
+    @media only screen and (max-width: 600px) {
+      .navbar_item:not(:last-child) {
+        margin-bottom: 1.5rem;
+        border-bottom: 1px solid #fff; } }
+  .navbar_link, .navbar_link:link, .navbar_link:visited {
+    color: #fff;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: all 0.2s;
+    font: 700; }
+  .navbar_link:hover {
+    color: #fe9900; }
+  .navbar_link:active, .navbar_link:focus {
+    outline: none;
+    color: #fe9900; }

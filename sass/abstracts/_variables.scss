@@ -1,0 +1,36 @@
+// COLOR VARIABLES
+// $color-primary: #c69963;
+// $color-primary-dark: #b28451;
+$color-primary-1: #fe9900;
+$color-primary-2: #7b61ff;
+
+$color-secondary: #4343ef;
+
+$color-background: #e5e5e5;
+
+$color-white: #fff;
+$color-black: #000;
+
+$color-tertiary-light: #2998ff;
+$color-tertiary-dark: #5643fa;
+
+$color-good: #28b485;
+$color-bad: #ff7730;
+
+// FONT VARIABLES
+$font-primary: 'Nunito', sans-serif;
+$font-display: 'Josefin Sans', sans-serif;
+
+//BOX SHADOW
+$shadow: 0 1rem 3rem rgba($color-black, 0.1);
+$shadow2: 0 1.5rem 4rem rgba($color-black, 0.15);
+
+//FONT SIZE
+$default-font-size: 1.6rem;
+
+//RESPONSIVE BREAKPOINT
+$bp-largest: 75em; //1200px
+$bp-large: 62.5em; //1000px
+$bp-medium: 50em; // 800px
+$bp-small: 37.5em; // 600px
+$bp-smallest: 25em; // 400px
