@@ -2,16 +2,20 @@
   position: absolute;
   width: 100%;
   padding: 2rem;
-  background-color: rgba($color-black, 0.85);
+  z-index: 100;
+  // background-color: rgba($color-black, 0.85);
+  background-color: $color-white;
+  box-shadow: $shadow2;
   transform-origin: right;
   transition: all 0.3s ease-in;
   @media only screen and (max-width: 600px) {
     transform: scaleX(0);
     width: 50%;
-    top: 1.5rem;
-    right: 1.5rem;
-    border-radius: 1rem;
+    top: 0;
+    right: 0;
+    border-bottom-left-radius: 1rem;
     padding: 4rem;
+    position: fixed;
   }
   &.clicked {
     transform: scaleX(1);
@@ -21,24 +25,23 @@
     // background-color: $color-secondary;
     padding: 1rem;
     border-radius: 1rem;
-    z-index: 100;
+    z-index: 200;
     position: fixed;
     font-size: 4rem;
     color: $color-primary-1;
     display: none;
-    top: 1rem;
-    right: 2.5rem;
+    top: 0.5rem;
+    right: 1.5rem;
     transition: all 0.2s ease-in-out;
     @media only screen and (max-width: 600px) {
       display: inline-block;
     }
     &.clicked {
-      transform: rotate(45deg);
-      color: rgba($color-primary-1, 0.5);
+      color: $color-black;
     }
   }
   &_logo {
-    z-index: 100;
+    z-index: 200;
     width: 20rem;
     position: fixed;
     top: 2rem;
@@ -62,7 +65,7 @@
       }
       @media only screen and (max-width: 600px) {
         margin-bottom: 1.5rem;
-        border-bottom: 1px solid $color-white;
+        border-bottom: 1px solid $color-black;
       }
     }
   }
@@ -70,8 +73,9 @@
     &,
     &:link,
     &:visited {
-      color: $color-white;
+      color: $color-black;
       font-size: 1.5rem;
+      font-weight: 700;
       text-decoration: none;
       transition: all 0.2s;
       font: 700;

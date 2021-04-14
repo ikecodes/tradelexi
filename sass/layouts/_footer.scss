@@ -1,0 +1,43 @@
+.footer {
+  background-color: rgba($color-black, 0.85);
+
+  &_box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  }
+  &_list {
+    padding: 2rem;
+    list-style: none;
+  }
+
+  &_item {
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+  }
+  &_header {
+    font-size: 1.5rem;
+    color: $color-primary-1;
+  }
+  &_link {
+    &,
+    &:link,
+    &:visited {
+      font-size: 1.2rem;
+      text-decoration: none;
+      text-transform: capitalize;
+      color: $color-white;
+    }
+
+    &:hover {
+      color: $color-primary-2;
+    }
+    &:active,
+    &:focus {
+      color: $color-primary-2;
+    }
+  }
+  &_social {
+    font-size: 2rem;
+  }
+}

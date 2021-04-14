@@ -9,7 +9,6 @@
     border-radius: 10rem;
     transition: all 0.2s;
     position: relative;
-    font-family: $font-display;
     font-size: $default-font-size;
 
     @media only screen and (max-width: $bp-small) {
@@ -25,78 +24,31 @@
     border: none;
     cursor: pointer;
   }
-
   &:hover {
     transform: translateY(-0.3rem);
     box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
-    &::after {
-      transform: scaleX(1.4) scaleY(1.6);
-      opacity: 0;
-    }
   }
-
   &:active,
   &:focus {
     outline: none;
     transform: translateY(-0.1rem);
     box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
   }
-  &--gold {
-    background-color: $color-good;
+  &--orange {
+    background-color: $color-primary-1;
     color: $color-white;
-
-    &::after {
-      background-color: $color-good;
-    }
+  }
+  &--purple {
+    background-color: $color-primary-2;
+    color: $color-white;
+  }
+  &--blue {
+    background-color: $color-secondary;
+    color: $color-white;
   }
 
-  &::after {
-    content: '';
-    height: 100%;
-    width: 100%;
-    display: inline-block;
-    border-radius: 10rem;
-    z-index: -1;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: all 0.3s;
-  }
   &--animated {
     animation: moveInBottom 0.75s ease-out;
     animation-fill-mode: backwards;
-  }
-}
-
-.btn-head {
-  &,
-  &:link,
-  &:visited {
-    text-decoration: none;
-    text-transform: uppercase;
-    padding: 1.5rem 4rem;
-    display: inline-block;
-    border-radius: 10rem;
-    transition: all 0.2s;
-    position: relative;
-    font-family: $font-display;
-    font-size: $default-font-size;
-    background-color: $color-tertiary-light;
-    color: $color-white;
-
-    @media only screen and (max-width: $bp-smallest) {
-      padding: 1rem 2rem;
-      font-size: 1.5rem;
-    }
-    ///change for <button> element
-    border: none;
-    cursor: pointer;
-  }
-
-  &:active,
-  &:hover,
-  &:focus {
-    outline: none;
-    background-color: $color-tertiary-dark;
   }
 }

@@ -1,0 +1,41 @@
+.services_section {
+  padding: 10rem;
+  @media only screen and (max-width: 500px) {
+    padding: 2rem;
+  }
+
+  .services {
+    &_box {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+      gap: 2rem;
+      align-items: center;
+      justify-items: center;
+      margin: 2rem;
+    }
+    &_text_box {
+      //   background-color: black;
+    }
+    &_text {
+      text-align: center;
+      font-size: 3.5rem;
+    }
+    &_paragraph {
+      padding: 2rem;
+      font-size: 2rem;
+    }
+    &_img {
+      border-radius: 1rem;
+      width: 40rem;
+    }
+
+    &_inverse {
+      @media only screen and (max-width: 770px) {
+        grid-row: 1/ 2;
+      }
+    }
+    &_learnmore {
+      font-size: 3rem;
+    }
+  }
+}

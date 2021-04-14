@@ -1,0 +1,46 @@
+.header {
+  &_box {
+    padding-top: 10rem;
+    display: grid;
+    gap: 5rem;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    align-items: center;
+    @media only screen and (max-width: 500px) {
+      gap: 3rem;
+      justify-items: center;
+    }
+  }
+  &_text_box {
+    padding: 5rem;
+  }
+  &_text {
+    font-size: 5rem;
+    font-weight: 900;
+    @media only screen and (max-width: 700px) {
+      font-size: 3.5rem;
+    }
+    @media only screen and (max-width: 500px) {
+      font-size: 5rem;
+    }
+  }
+  &_paragraph {
+    margin-top: 2rem;
+    font-size: 2rem;
+    @media only screen and (max-width: 700px) {
+      font-size: 1.5rem;
+    }
+  }
+  &_illustration {
+    width: 40rem;
+    @media only screen and (max-width: 700px) {
+      width: 30rem;
+    }
+    @media only screen and (max-width: 500px) {
+      width: 40rem;
+    }
+  }
+
+  &_button {
+    padding: 4rem;
+  }
+}
