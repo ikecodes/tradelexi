@@ -320,6 +320,146 @@ textarea {
   .services_section .services_learnmore {
     font-size: 3rem; }
 
+
+.about-main {
+  padding-top: 6rem;
+  font-family: "Merriweather", serif; }
+
+.about-header {
+  background-image: url(/img/about-image/about-us.jpg);
+  background-size: cover;
+  height: 60vh;
+  justify-content: center; }
+
+.about-header p {
+  color: #fff;
+  font-size: 20em;
+  padding-top: 45px;
+  text-align: center; }
+
+.about-details {
+  background-color: #fff;
+  font-size: 3em; }
+
+.about-details .about-detailsOne {
+  padding-top: 2em;
+  width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
+
+.about-details .about-detailsTwo {
+  padding-top: 4em;
+  width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
+
+.about-details .about-detailsTwo img {
+  margin-left: 50px; }
+
+.about-details .about-detailsThree {
+  padding-top: 4em;
+  width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
+
+.about-member {
+  margin-top: 15em; }
+
+.about-member p {
+  font-size: 4em;
+  font-weight: 600;
+  text-align: center; }
+
+.about-member .about-memberImages {
+  width: 150%;
+  text-align: center;
+  padding-top: 6em; }
+
+.about-member img {
+  padding: 3em 2em; }
+
+.about-subscribe {
+  width: 80%;
+  padding-top: 5em;
+  margin: 0 auto;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-size: 3em;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+  padding: 2em 3em; }
+
+.about-subscribe .left {
+  text-align: left;
+  margin: 0 auto;
+  width: 100%; }
+
+.about-subscribe .right {
+  position: relative; }
+
+.about-subscribe .right .about-button {
+  position: absolute;
+  top: 11px;
+  right: 10px; }
+
+.about-subscribe .right input {
+  padding: 1em;
+  width: 100%;
+  padding: 1.5em;
+  position: relative; }
+
+@media (max-width: 576px) {
+  .about-main {
+    max-width: 100%;
+    overflow: hidden;
+    justify-content: center; }
+  .about-header {
+    padding-top: 1em;
+    background-image: url(/img/about-image/about-us.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80%;
+    width: 100%;
+    justify-content: center; }
+  .about-header p {
+    color: #fff;
+    font-size: 10em;
+    font-weight: 700;
+    padding-top: 10px;
+    text-align: center;
+    width: 100%; }
+  .about-main .about-details {
+    width: 100%;
+    margin: 0 auto;
+    padding: 1em 2em;
+    justify-content: center; }
+  .about-details .about-detailsOne {
+    padding-top: 2em;
+    width: 100%;
+    margin: 0 auto;
+    display: block; }
+  .about-details .about-detailsTwo {
+    display: none; }
+  .about-details .about-detailsThree {
+    padding-top: 4em;
+    width: 100%;
+    margin: 0 auto;
+    display: block; }
+  .para {
+    text-align: center; }
+  .about-detailsOne img, .about-detailsThree img {
+    text-align: center;
+    border-radius: 10px;
+    margin: 0 auto;
+    width: 100%; }
+  .about-detailsOne p, .about-detailsThree p {
+    padding-top: 1em; }
+  .about-avatar {
+    padding-top: 3em; } }
+
 .faq_main {
   position: relative;
   height: 70vh;
@@ -471,3 +611,4 @@ textarea {
 
 #hide1 {
   cursor: pointer; }
+
