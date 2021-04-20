@@ -1,0 +1,79 @@
+// .faq_section {
+//   height: 100vh;
+//   background-color: black;
+// }
+
+.faq {
+  &_main {
+    position: relative;
+    height: 70vh;
+    background-image: linear-gradient(rgba($color-primary-2, 0.93), rgba($color-primary-2, 0.93)), url(../img/faq/faq.JPG);
+    background-size: cover;
+    background-position: center;
+
+    @media only screen and (max-width: 600px) {
+      height: 50vh;
+    }
+  }
+  &_text-box {
+    padding-top: 1.2rem;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &_header {
+    font-size: 2rem;
+  }
+  &_text {
+    color: $color-white;
+    font-size: 1.5rem;
+    margin-top: 2.5rem;
+  }
+
+  &_questions {
+    padding: 10rem;
+    text-align: center;
+    @media only screen and (max-width: 700px) {
+      padding: 5rem 1rem;
+    }
+  }
+  &_questions-box {
+    position: relative;
+    cursor: pointer;
+    box-shadow: $shadow2;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    &:not(:last-child) {
+      margin-bottom: 3rem;
+    }
+    &:hover {
+      background-color: rgba($color-primary-2, 0.3);
+    }
+  }
+  &_icon {
+    position: absolute;
+    font-size: 1.5rem;
+    right: 1.2rem;
+    top: 0.5rem;
+    transition: all 0.3s ease-in-out;
+    &.clicked {
+      transform: rotate(180deg);
+    }
+  }
+  &_question {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  &_answer {
+    font-size: 1.2rem;
+    opacity: 0;
+    display: none;
+    transition: all 0.3 ease-in;
+    &.clicked {
+      opacity: 1;
+      display: inline-block;
+    }
+  }
+}

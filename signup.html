@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="css/icon-font.css" /> -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/png" href="img/tradelexi-favicon.jpg" />
+
+    <title>Tradelexi</title>
+</head>
+
+<body>
+
+
+    <section class="signin">
+        <img src="./img/tradelexi-logo.png" alt="tradelexi-logo" class="signin_img">
+        <div class="signin_box">
+            <div class="signin_text-box">
+                <h1 class="signin_header">
+                    Connect with the right source
+                </h1>
+                <p class="signin_paragraph">
+                    Tradelexi will connect you with the right source, that will deliver your work perfectly
+                </p>
+            </div>
+            <form action="#" class="signin_form">
+                <div class="signin_form_group">
+                    <i class="fas fa-user signin_form_icon"></i>
+                    <input type="text" placeholder="Name" class="signin_form_input" id="signin_name" required><span
+                        id='nameverify'></span>
+                </div>
+                <div class="signin_form_group">
+                    <i class="fas fa-envelope signin_form_icon"></i>
+                    <input type="email" placeholder="Email" class="signin_form_input" id="signin_email" required><span
+                        id='emailverify'></span>
+                </div>
+                <div class="signin_form_group">
+                    <i class="fas fa-lock signin_form_icon"></i>
+                    <input type="password" placeholder="Password" required id="signin_password"
+                        class="signin_form_input">
+                    <i id="hide1" class="fas fa-eye-slash signin_form_icon"></i><span id='passverify'></span>
+                </div>
+                <div class="signin_form_group">
+                    <i class="fas fa-lock signin_form_icon"></i>
+                    <input type="password" placeholder="Password Confirm" required id="signin_passwordConfirm"
+                        class="signin_form_input">
+                    <span id='confirmverify'></span>
+                </div>
+                <div class="signin_form_group">
+                    <input type="checkbox" id="signin_form_checkbox"> <label for="signin_form_checkbox"
+                        class="signin_form_checkbox_label"> Remember
+                        Me</label>
+                </div>
+                <p class="signin_form_agree">By clicking on the sign up button, you agree to our <a href="/terms.html"
+                        class="signin_form_link">terms &
+                        conditions</a>, and <a href="/privacy.html" class="signin_form_link">privacy policy</a>.</p>
+                <button class="signin_form_submit">SIGN UP</button>
+                <p class="signin_form_agree">Already have an account? <a href="/signin.html"
+                        class="signin_form_link">Login</a></p>
+                <a href="/" class="signin_form_link">Back to home page</a>
+            </form>
+        </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

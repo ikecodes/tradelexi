@@ -44,14 +44,14 @@
 @keyframes pulsate {
   0% {
     transform: scale(1);
-    box-shadow: none;
+    // box-shadow: none;
   }
   0% {
-    transform: scale(1.05);
-    box-shadow: $shadow2;
+    transform: scale(1.1);
+    // box-shadow: $shadow2;
   }
   100% {
     transform: scale(1);
-    box-shadow: none;
+    // box-shadow: none;
   }
 }

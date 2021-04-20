@@ -28,14 +28,11 @@
 
 @keyframes pulsate {
   0% {
-    transform: scale(1);
-    box-shadow: none; }
+    transform: scale(1); }
   0% {
-    transform: scale(1.05);
-    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+    transform: scale(1.1); }
   100% {
-    transform: scale(1);
-    box-shadow: none; } }
+    transform: scale(1); } }
 
 *,
 *::before,
@@ -232,7 +229,7 @@ textarea {
   @media only screen and (max-width: 600px) {
     .navbar {
       transform: scaleX(0);
-      width: 50%;
+      width: 70%;
       top: 0;
       right: 0;
       border-bottom-left-radius: 1rem;
@@ -250,6 +247,7 @@ textarea {
     display: none;
     top: 0.5rem;
     right: 1.5rem;
+    animation: pulsate 2s ease-in-out infinite;
     transition: all 0.2s ease-in-out; }
     @media only screen and (max-width: 600px) {
       .navbar_icon {
@@ -262,6 +260,9 @@ textarea {
     position: fixed;
     top: 2rem;
     left: 2.5rem; }
+    @media only screen and (max-width: 600px) {
+      .navbar_logo {
+        z-index: 50; } }
   .navbar_list {
     list-style: none;
     margin-left: auto;
@@ -277,7 +278,7 @@ textarea {
         margin-right: 1.5rem; } }
     @media only screen and (max-width: 600px) {
       .navbar_item:not(:last-child) {
-        margin-bottom: 1.5rem;
+        margin-bottom: 2rem;
         border-bottom: 1px solid #000; } }
   .navbar_link, .navbar_link:link, .navbar_link:visited {
     color: #000;
@@ -318,6 +319,7 @@ textarea {
       grid-row: 1/ 2; } }
   .services_section .services_learnmore {
     font-size: 3rem; }
+
 
 .about-main {
   padding-top: 6rem;
@@ -457,3 +459,156 @@ textarea {
     padding-top: 1em; }
   .about-avatar {
     padding-top: 3em; } }
+
+.faq_main {
+  position: relative;
+  height: 70vh;
+  background-image: linear-gradient(rgba(123, 97, 255, 0.93), rgba(123, 97, 255, 0.93)), url(../img/faq/faq.JPG);
+  background-size: cover;
+  background-position: center; }
+  @media only screen and (max-width: 600px) {
+    .faq_main {
+      height: 50vh; } }
+
+.faq_text-box {
+  padding-top: 1.2rem;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.faq_header {
+  font-size: 2rem; }
+
+.faq_text {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-top: 2.5rem; }
+
+.faq_questions {
+  padding: 10rem;
+  text-align: center; }
+  @media only screen and (max-width: 700px) {
+    .faq_questions {
+      padding: 5rem 1rem; } }
+
+.faq_questions-box {
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  padding: 1.5rem;
+  border-radius: 1.5rem; }
+  .faq_questions-box:not(:last-child) {
+    margin-bottom: 3rem; }
+  .faq_questions-box:hover {
+    background-color: rgba(123, 97, 255, 0.3); }
+
+.faq_icon {
+  position: absolute;
+  font-size: 1.5rem;
+  right: 1.2rem;
+  top: 0.5rem;
+  transition: all 0.3s ease-in-out; }
+  .faq_icon.clicked {
+    transform: rotate(180deg); }
+
+.faq_question {
+  font-size: 1.2rem;
+  margin-bottom: 1rem; }
+
+.faq_answer {
+  font-size: 1.2rem;
+  opacity: 0;
+  display: none;
+  transition: all 0.3 ease-in; }
+  .faq_answer.clicked {
+    opacity: 1;
+    display: inline-block; }
+
+.signin {
+  position: relative;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/home/client.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .signin_img {
+    position: absolute;
+    height: 3rem;
+    top: 2rem;
+    left: 2rem; }
+  .signin_box {
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 2rem; }
+    @media only screen and (max-width: 500px) {
+      .signin_box {
+        width: 90%; } }
+  .signin_header {
+    color: #fff;
+    font-size: 3.5rem;
+    margin-bottom: 2rem; }
+  .signin_paragraph {
+    color: #fe9900;
+    font-size: 1.2rem; }
+  .signin_form_group:not(:last-child) {
+    margin-bottom: 1.5rem; }
+  .signin_form_icon {
+    color: #fe9900;
+    font-size: 1.5rem;
+    margin-right: 1rem; }
+  .signin_form_input {
+    outline: none;
+    overflow: hidden;
+    font-size: 16px;
+    width: 75%;
+    font-family: inherit;
+    padding: 0.5rem 2rem;
+    border: none;
+    border-bottom: 1px solid #999999; }
+    .signin_form_input::-webkit-input-placeholder {
+      font-size: 1.2rem; }
+    .signin_form_input:focus {
+      outline: none; }
+  .signin_form_checkbox_label {
+    color: #fff;
+    margin-right: 5rem; }
+  .signin_form_submit {
+    outline: none;
+    border: none;
+    color: #fff;
+    margin: 1.2rem;
+    font-size: 1.5rem;
+    padding: 1rem 7rem;
+    border-radius: 1.2rem;
+    cursor: pointer;
+    background-color: #fe9900;
+    margin-bottom: 1.2rem;
+    display: block; }
+  .signin_form_agree {
+    text-align: center;
+    margin: 1.2rem;
+    color: #fff;
+    font-size: 1.2rem; }
+  .signin_form_link, .signin_form_link:link, .signin_form_link:visited {
+    text-decoration: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #fe9900; }
+
+#nameverify,
+#emailverify,
+#passverify,
+#confirmverify {
+  margin-top: 1.2rem;
+  margin-left: 2rem;
+  font-size: 1.2rem;
+  display: block; }
+
+#hide1 {
+  cursor: pointer; }
+
