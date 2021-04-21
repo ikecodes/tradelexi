@@ -1,0 +1,104 @@
+.contact {
+  padding: 15rem 5rem 0;
+
+  &_header {
+    text-align: center;
+    font-size: 3.5rem;
+    color: $color-primary-1;
+  }
+  &_box {
+    background-color: $color-primary-2;
+    box-shadow: $shadow2;
+    border-radius: 1rem;
+    padding: 5rem;
+    gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    align-items: center;
+    justify-items: center;
+  }
+  &_form {
+    &_group {
+      &:not(:last-child) {
+        margin-bottom: 1.2rem;
+      }
+    }
+    &_label {
+      font-size: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    &_input {
+      display: block;
+      outline: none;
+      overflow: hidden;
+      font-size: 16px;
+      width: 75%;
+      font-family: inherit;
+      padding: 0.5rem 2rem;
+      border: none;
+      //   border-bottom: 1px solid #999999;
+      &::-webkit-input-placeholder {
+        font-size: 1.2rem;
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+    &_textarea {
+      display: block;
+      overflow: hidden;
+      font-size: 16px;
+      font-family: inherit;
+      padding: 0.5rem 2rem;
+      border: none;
+      &:focus {
+        outline: none;
+      }
+    }
+    &_button {
+      color: $color-white;
+      outline: none;
+      border: none;
+      font-size: 2rem;
+      background-color: $color-primary-1;
+      padding: 1rem 5rem;
+      cursor: pointer;
+      border-radius: 1rem;
+    }
+  }
+
+  &_openhours {
+    // justify-self: start;
+    background-color: $color-white;
+    padding: 5rem;
+    border-radius: 1rem;
+    &_day {
+      font-size: 3rem;
+      color: $color-primary-2;
+    }
+    &_time {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 2rem;
+    }
+  }
+  &_details {
+    background-color: $color-primary-1;
+    margin-top: 5rem;
+    padding: 2rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 3rem;
+    &_icon {
+      color: $color-white;
+      font-size: 2rem;
+    }
+    &_text {
+      color: $color-white;
+      font-size: 2rem;
+    }
+  }
+}

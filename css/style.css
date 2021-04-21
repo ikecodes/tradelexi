@@ -229,7 +229,9 @@ textarea {
   @media only screen and (max-width: 600px) {
     .navbar {
       transform: scaleX(0);
-      width: 70%;
+      background-color: rgba(0, 0, 0, 0.95);
+      width: 50%;
+      height: 100%;
       top: 0;
       right: 0;
       border-bottom-left-radius: 1rem;
@@ -253,7 +255,7 @@ textarea {
       .navbar_icon {
         display: inline-block; } }
     .navbar_icon.clicked {
-      color: #000; }
+      color: #fff; }
   .navbar_logo {
     z-index: 200;
     width: 20rem;
@@ -270,16 +272,15 @@ textarea {
     justify-content: flex-end; }
     @media only screen and (max-width: 600px) {
       .navbar_list {
-        flex-direction: column; } }
+        flex-direction: column;
+        align-items: flex-end;
+        margin-top: 5rem; } }
   .navbar_item:not(:last-child) {
     margin-right: 2rem; }
-    @media only screen and (max-width: 700px) {
-      .navbar_item:not(:last-child) {
-        margin-right: 1.5rem; } }
     @media only screen and (max-width: 600px) {
       .navbar_item:not(:last-child) {
-        margin-bottom: 2rem;
-        border-bottom: 1px solid #000; } }
+        margin-right: 0;
+        margin-bottom: 3.5rem; } }
   .navbar_link, .navbar_link:link, .navbar_link:visited {
     color: #000;
     font-size: 1.5rem;
@@ -287,6 +288,10 @@ textarea {
     text-decoration: none;
     transition: all 0.2s;
     font: 700; }
+    @media only screen and (max-width: 600px) {
+      .navbar_link, .navbar_link:link, .navbar_link:visited {
+        color: #fff;
+        font-size: 3rem; } }
   .navbar_link:hover {
     color: #fe9900; }
   .navbar_link:active, .navbar_link:focus {
@@ -320,6 +325,85 @@ textarea {
   .services_section .services_learnmore {
     font-size: 3rem; }
 
+.contact {
+  padding: 15rem 5rem 0; }
+  .contact_header {
+    text-align: center;
+    font-size: 3.5rem;
+    color: #fe9900; }
+  .contact_box {
+    background-color: #7b61ff;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+    border-radius: 1rem;
+    padding: 5rem;
+    gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    align-items: center;
+    justify-items: center; }
+  .contact_form_group:not(:last-child) {
+    margin-bottom: 1.2rem; }
+  .contact_form_label {
+    font-size: 1.5rem;
+    margin: 1.5rem 0; }
+  .contact_form_input {
+    display: block;
+    outline: none;
+    overflow: hidden;
+    font-size: 16px;
+    width: 75%;
+    font-family: inherit;
+    padding: 0.5rem 2rem;
+    border: none; }
+    .contact_form_input::-webkit-input-placeholder {
+      font-size: 1.2rem; }
+    .contact_form_input:focus {
+      outline: none; }
+  .contact_form_textarea {
+    display: block;
+    overflow: hidden;
+    font-size: 16px;
+    font-family: inherit;
+    padding: 0.5rem 2rem;
+    border: none; }
+    .contact_form_textarea:focus {
+      outline: none; }
+  .contact_form_button {
+    color: #fff;
+    outline: none;
+    border: none;
+    font-size: 2rem;
+    background-color: #fe9900;
+    padding: 1rem 5rem;
+    cursor: pointer;
+    border-radius: 1rem; }
+  .contact_openhours {
+    background-color: #fff;
+    padding: 5rem;
+    border-radius: 1rem; }
+    .contact_openhours_day {
+      font-size: 3rem;
+      color: #7b61ff; }
+    .contact_openhours_time {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 2rem; }
+  .contact_details {
+    background-color: #fe9900;
+    margin-top: 5rem;
+    padding: 2rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 3rem; }
+    .contact_details_icon {
+      color: #fff;
+      font-size: 2rem; }
+    .contact_details_text {
+      color: #fff;
+      font-size: 2rem; }
 
 .about-main {
   padding-top: 6rem;
@@ -611,4 +695,3 @@ textarea {
 
 #hide1 {
   cursor: pointer; }
-

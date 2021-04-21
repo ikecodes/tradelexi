@@ -10,7 +10,9 @@
   transition: all 0.3s ease-in;
   @media only screen and (max-width: 600px) {
     transform: scaleX(0);
-    width: 70%;
+    background-color: rgba($color-black, 0.95);
+    width: 50%;
+    height: 100%;
     top: 0;
     right: 0;
     border-bottom-left-radius: 1rem;
@@ -38,7 +40,7 @@
       display: inline-block;
     }
     &.clicked {
-      color: $color-black;
+      color: $color-white;
     }
   }
   &_logo {
@@ -58,17 +60,21 @@
     justify-content: flex-end;
     @media only screen and (max-width: 600px) {
       flex-direction: column;
+      align-items: flex-end;
+      margin-top: 5rem;
+      // justify-content: stretch;
     }
   }
   &_item {
     &:not(:last-child) {
       margin-right: 2rem;
-      @media only screen and (max-width: 700px) {
-        margin-right: 1.5rem;
-      }
+      // @media only screen and (max-width: 700px) {
+      //   margin-right: 0;
+      // }
       @media only screen and (max-width: 600px) {
-        margin-bottom: 2rem;
-        border-bottom: 1px solid $color-black;
+        margin-right: 0;
+        margin-bottom: 3.5rem;
+        // border-bottom: 1px solid $color-white;
       }
     }
   }
@@ -82,6 +88,10 @@
       text-decoration: none;
       transition: all 0.2s;
       font: 700;
+      @media only screen and (max-width: 600px) {
+        color: $color-white;
+        font-size: 3rem;
+      }
     }
 
     &:hover {
