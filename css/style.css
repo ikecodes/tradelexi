@@ -230,7 +230,7 @@ textarea {
     .navbar {
       transform: scaleX(0);
       background-color: rgba(0, 0, 0, 0.95);
-      width: 50%;
+      width: 65%;
       height: 100%;
       top: 0;
       right: 0;
@@ -269,7 +269,8 @@ textarea {
     list-style: none;
     margin-left: auto;
     display: flex;
-    justify-content: flex-end; }
+    justify-content: flex-end;
+    align-items: center; }
     @media only screen and (max-width: 600px) {
       .navbar_list {
         flex-direction: column;
@@ -297,6 +298,9 @@ textarea {
   .navbar_link:active, .navbar_link:focus {
     outline: none;
     color: #fe9900; }
+  .navbar_img {
+    max-width: 5rem;
+    border-radius: 50%; }
 
 .services_section {
   padding: 10rem; }
@@ -695,3 +699,53 @@ textarea {
 
 #hide1 {
   cursor: pointer; }
+
+.profile {
+  width: 80%;
+  margin: 0 auto;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  padding: 10rem 2rem 0; }
+  .profile_header {
+    display: flex;
+    border-bottom: 1px solid #fe9900;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem; }
+  .profile_header-box {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+    text-transform: capitalize; }
+  .profile_img {
+    height: 10rem;
+    border-radius: 50%; }
+  .profile_name {
+    font-size: 4rem; }
+  .profile_location {
+    font-size: 1.5rem;
+    color: #fe9900; }
+  .profile_details {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    text-transform: capitalize;
+    border-bottom: 1px solid #fe9900; }
+    .profile_details:not(:last-child) {
+      margin-bottom: 2rem; }
+  .profile_details-box {
+    display: flex;
+    align-items: center; }
+    .profile_details-box:not(:last-child) {
+      margin-bottom: 1.5rem; }
+  .profile_icon {
+    font-size: 3rem;
+    margin-right: 2rem;
+    color: rgba(0, 0, 0, 0.85); }
+  .profile_link, .profile_link:link, .profile_link:visited {
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    transition: all 0.5s ease-out; }
+  .profile_link:active, .profile_link:hover {
+    color: #fe9900;
+    transform: translateY(-0.2rem); }

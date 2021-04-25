@@ -11,7 +11,7 @@
   @media only screen and (max-width: 600px) {
     transform: scaleX(0);
     background-color: rgba($color-black, 0.95);
-    width: 50%;
+    width: 65%;
     height: 100%;
     top: 0;
     right: 0;
@@ -58,6 +58,7 @@
     margin-left: auto;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     @media only screen and (max-width: 600px) {
       flex-direction: column;
       align-items: flex-end;
@@ -103,5 +104,9 @@
       outline: none;
       color: $color-primary-1;
     }
+  }
+  &_img {
+    max-width: 5rem;
+    border-radius: 50%;
   }
 }
