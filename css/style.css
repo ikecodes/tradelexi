@@ -750,3 +750,52 @@ textarea {
   .profile_link:active, .profile_link:hover {
     color: #fe9900;
     transform: translateY(-0.2rem); }
+
+.categories {
+  width: 80%;
+  margin: 0 auto;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  padding: 10rem 2rem 0; }
+  .categories_form {
+    text-align: center;
+    margin: 5rem 0; }
+    .categories_form_input {
+      width: 60%;
+      font-family: inherit;
+      border: none;
+      font-size: 1rem;
+      border-bottom: 1px solid #fe9900;
+      padding: 1rem 1rem;
+      transition: all 0.3s ease-in; }
+      .categories_form_input:focus {
+        border: none;
+        outline: none;
+        box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+      .categories_form_input::placeholder {
+        font-size: 1.2rem; }
+    .categories_form_button {
+      border: none;
+      padding: 1.2rem 2rem;
+      color: #fff;
+      background-color: #fe9900;
+      text-transform: capitalize;
+      cursor: pointer;
+      transition: all 0.3s ease; }
+      .categories_form_button:hover {
+        transform: translateY(-0.2rem); }
+  .categories_menu_header {
+    color: #fe9900;
+    font-size: 3rem;
+    text-transform: capitalize;
+    text-align: center; }
+  .categories_menu_box {
+    padding: 2rem;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 3rem; }
+  .categories_menu_img {
+    width: 20rem;
+    border-radius: 1rem; }
+  .categories_menu_name {
+    font-size: 1.2rem; }
