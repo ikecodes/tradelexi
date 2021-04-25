@@ -218,6 +218,7 @@ textarea {
   padding: 4rem; }
 
 .navbar {
+  text-transform: capitalize;
   position: absolute;
   width: 100%;
   padding: 2rem;
