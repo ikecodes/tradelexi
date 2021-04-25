@@ -702,10 +702,50 @@ textarea {
   cursor: pointer; }
 
 .profile {
+  position: relative;
   width: 80%;
   margin: 0 auto;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
   padding: 10rem 2rem 0; }
+  .profile_delete_box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+    padding: 3.5rem;
+    border-radius: 1rem;
+    background-color: #fff;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in; }
+    .profile_delete_box.clicked {
+      opacity: 1;
+      visibility: visible; }
+  .profile_delete_cancel {
+    position: absolute;
+    padding: 1rem 1rem 3rem;
+    top: 0;
+    right: 2rem;
+    font-size: 3rem;
+    color: #28b485;
+    cursor: pointer; }
+  .profile_delete_text {
+    font-size: 1.5rem; }
+  .profile_delete_confirm {
+    display: flex;
+    padding: 2rem 0 0;
+    justify-content: center; }
+  .profile_delete_yes {
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    margin: 1.2rem;
+    padding: 2rem 4rem;
+    color: #fff;
+    border-radius: 1rem;
+    background-color: red; }
   .profile_header {
     display: flex;
     border-bottom: 1px solid #fe9900;

@@ -43,13 +43,16 @@
 
     <div class="profile">
         <div class="profile_delete_box">
-            <div class="profile_delete_text">are you sure you want to delete your account?</div>
+            <i class="fas fa-times profile_delete_cancel"></i>
+            <div class="profile_delete_text">are you sure you want to delete your account? this action cannot be
+                reversed.</div>
             <div class="profile_delete_confirm">
-                <h1 class="profile_delete_yes">yes</h1>
-                <h1 class="profile_delete_no">no</h1>
+                <button type="submit" class="profile_delete_yes">yes</button>
+                <!-- <button type=" submit" class="profile_delete_no">no</button> -->
+
             </div>
         </div>
-        <div class="profile_header">
+        <div class=" profile_header">
             <img src="./img/people/realtor-3.jpeg" alt="profile image" class="profile_img">
             <div class="profile_header-box">
                 <h1 class="profile_name">john snow</h1>
@@ -73,7 +76,7 @@
             <div class="profile_details-box"><i class="fas fa-registered profile_icon"></i> <a href="#"
                     class="profile_link">register as service provider</a> </div>
             <div class="profile_details-box"><i class="fas fa-trash profile_icon"></i></i> <a href="#"
-                    class="profile_link">delete account</a> </div>
+                    class="profile_link profile_delete_button">delete account</a> </div>
         </div>
         <div class="profile_details">
             <div class="profile_details-box"><i class="fas fa-question profile_icon"></i> <a href="#"

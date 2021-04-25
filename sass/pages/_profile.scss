@@ -1,8 +1,55 @@
 .profile {
+  position: relative;
   width: 80%;
   margin: 0 auto;
   box-shadow: $shadow2;
   padding: 10rem 2rem 0;
+
+  &_delete {
+    &_box {
+      @include absCenter;
+      box-shadow: $shadow2;
+      padding: 3.5rem;
+      border-radius: 1rem;
+      background-color: $color-white;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s ease-in;
+
+      &.clicked {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+    &_cancel {
+      position: absolute;
+      padding: 1rem 1rem 3rem;
+      top: 0;
+      right: 2rem;
+      font-size: 3rem;
+      color: $color-good;
+      cursor: pointer;
+    }
+    &_text {
+      font-size: 1.5rem;
+    }
+    &_confirm {
+      display: flex;
+      padding: 2rem 0 0;
+      justify-content: center;
+    }
+    &_yes {
+      cursor: pointer;
+      font-weight: bold;
+      text-transform: uppercase;
+      border: none;
+      margin: 1.2rem;
+      padding: 2rem 4rem;
+      color: $color-white;
+      border-radius: 1rem;
+      background-color: red;
+    }
+  }
 
   &_header {
     display: flex;
