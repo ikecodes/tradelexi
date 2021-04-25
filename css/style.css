@@ -728,10 +728,10 @@ textarea {
     padding: 2rem;
     display: flex;
     flex-direction: column;
-    text-transform: capitalize;
-    border-bottom: 1px solid #fe9900; }
+    text-transform: capitalize; }
     .profile_details:not(:last-child) {
-      margin-bottom: 2rem; }
+      margin-bottom: 2rem;
+      border-bottom: 1px solid #fe9900; }
   .profile_details-box {
     display: flex;
     align-items: center; }
