@@ -21,7 +21,7 @@ $('.navbar a').on('click', () => {
 // FAQ
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 $('.faq_icon').on('click', (e) => {
-  e.target.classList.toggle('clicked');
+  // e.target.classList.toggle('clicked');
   const parent = e.target.parentNode;
   parent.children[2].classList.toggle('clicked');
 });
