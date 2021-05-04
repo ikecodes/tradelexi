@@ -1311,4 +1311,11 @@ textarea {
 .categories_menu_name {
   font-size: 1.2rem;
 }
+
+.test__header {
+  padding: 10rem;
+  height: 10rem;
+  background-color: #fe9900;
+  color: #7b61ff;
+}
 /*# sourceMappingURL=main.css.map */
