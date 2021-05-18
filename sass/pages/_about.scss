@@ -23,24 +23,29 @@ $text-align: center;
   background-color: #fff;
   font-size: $text;
   padding: 2rem;
+  @media only screen and (max-width: 430px) {
+    padding: 0;
+  }
 }
 .about-details .about-detailsOne {
   padding-top: 2rem;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
   gap: 3rem;
   justify-items: center;
   align-items: center;
+  text-align: center;
 }
 .about-details .about-detailsTwo {
   padding-top: 2rem;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
   gap: 3rem;
   justify-items: center;
   align-items: center;
+  text-align: center;
 }
 .about-details .about-detailsTwo img {
   @media only screen and (max-width: 830px) {
@@ -52,14 +57,14 @@ $text-align: center;
   padding-top: 2rem;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
   gap: 3rem;
   justify-items: center;
   align-items: center;
+  text-align: center;
 }
 
 .about-member {
-  // padding: 30em 1em;
   margin-top: 15em;
 }
 
@@ -83,10 +88,11 @@ $text-align: center;
   margin: 0 auto;
   text-align: center;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 3rem;
   font-size: $text;
   box-shadow: $shadow3;
-  padding: 2em 3em;
+  padding: 2rem;
 }
 
 .about-subscribe .left {
@@ -94,104 +100,31 @@ $text-align: center;
   margin: 0 auto;
   width: 100%;
 }
-.about-subscribe .right {
+.about-subscribe .right > form {
   position: relative;
 }
 
 .about-subscribe .right .about-button {
   position: absolute;
-  top: 11px;
-  right: 10px;
-  // margin-top: -90px;
+  top: 50%;
+  right: 1.5rem;
+  transform: translateY(-50%);
 }
 .about-subscribe .right input {
-  padding: 1em;
   width: 100%;
-  padding: 1.5em;
+  padding: 1.5rem;
   position: relative;
+  outline: none;
+  &::placeholder {
+    font-size: 1.5rem;
+  }
 }
 
-// @media only screen and (max-width: 430px) {
-//   .about-detailsOne img,
-//   .about-detailsTwo img,
-//   .about-detailsThree img {
-//     border-radius: 10px;
-//     // margin: 0 auto;
-//     width: 100%;
-//   }
-// }
-// @media (max-width: 576px) {
-//   .about-main {
-//     max-width: 100%;
-//     overflow: hidden;
-//     justify-content: center;
-
-//     //    text-align: center;
-//   }
-
-//   .about-header {
-//     padding-top: 1em;
-//     background-image: url(/img/about-image/about-us.jpg);
-//     background-repeat: no-repeat;
-//     // background-color: black;
-//     background-size: cover;
-//     height: 80%;
-//     width: 100%;
-//     justify-content: center;
-//   }
-//   .about-header p {
-//     color: $color-white;
-//     font-size: 4rem;
-//     font-weight: 700;
-//     padding-top: 1rem;
-//     text-align: $text-align;
-//     width: 100%;
-//   }
-
-//   .about-main .about-details {
-//     width: 100%;
-//     margin: 0 auto;
-//     padding: 1em 2em;
-//     justify-content: center;
-
-//     // margin-left: 30px;
-//   }
-//   .about-details .about-detailsOne {
-//     padding-top: 2em;
-//     width: 100%;
-//     margin: 0 auto;
-//     // display: block;
-//   }
-//   .about-details .about-detailsTwo {
-//     padding-top: 4em;
-//     width: 100%;
-//     margin: 0 auto;
-//     // display: block;
-//   }
-
-//   .about-details .about-detailsThree {
-//     padding-top: 4em;
-//     width: 100%;
-//     margin: 0 auto;
-//     // display: block;
-//   }
-//   .para {
-//     text-align: center;
-//   }
-//   .about-detailsOne img,
-//   .about-detailsTwo img,
-//   .about-detailsThree img {
-//     text-align: center;
-//     border-radius: 10px;
-//     margin: 0 auto;
-//     width: 100%;
-//   }
-//   .about-detailsOne p,
-//   .about-detailsThree p {
-//     padding-top: 1em;
-//   }
-
-//   .about-avatar {
-//     padding-top: 3em;
-//   }
-// }
+@media only screen and (max-width: 430px) {
+  .about-detailsOne img,
+  .about-detailsTwo img,
+  .about-detailsThree img {
+    margin: 0;
+    width: 100%;
+  }
+}

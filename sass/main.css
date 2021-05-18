@@ -736,18 +736,25 @@ textarea {
   padding: 2rem;
 }
 
+@media only screen and (max-width: 430px) {
+  .about-details {
+    padding: 0;
+  }
+}
+
 .about-details .about-detailsOne {
   padding-top: 2rem;
   margin: 0 auto;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(50rem, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+  -ms-grid-columns: (minmax(40rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
   gap: 3rem;
   justify-items: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
 }
 
 .about-details .about-detailsTwo {
@@ -755,13 +762,14 @@ textarea {
   margin: 0 auto;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(50rem, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+  -ms-grid-columns: (minmax(40rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
   gap: 3rem;
   justify-items: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
 }
 
 @media only screen and (max-width: 830px) {
@@ -777,13 +785,14 @@ textarea {
   margin: 0 auto;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(50rem, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+  -ms-grid-columns: (minmax(40rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
   gap: 3rem;
   justify-items: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
 }
 
 .about-member {
@@ -813,12 +822,13 @@ textarea {
   text-align: center;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 3rem;
   font-size: 2rem;
   -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
           box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
-  padding: 2em 3em;
+  padding: 2rem;
 }
 
 .about-subscribe .left {
@@ -827,21 +837,48 @@ textarea {
   width: 100%;
 }
 
-.about-subscribe .right {
+.about-subscribe .right > form {
   position: relative;
 }
 
 .about-subscribe .right .about-button {
   position: absolute;
-  top: 11px;
-  right: 10px;
+  top: 50%;
+  right: 1.5rem;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .about-subscribe .right input {
-  padding: 1em;
   width: 100%;
-  padding: 1.5em;
+  padding: 1.5rem;
   position: relative;
+  outline: none;
+}
+
+.about-subscribe .right input::-webkit-input-placeholder {
+  font-size: 1.5rem;
+}
+
+.about-subscribe .right input:-ms-input-placeholder {
+  font-size: 1.5rem;
+}
+
+.about-subscribe .right input::-ms-input-placeholder {
+  font-size: 1.5rem;
+}
+
+.about-subscribe .right input::placeholder {
+  font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 430px) {
+  .about-detailsOne img,
+  .about-detailsTwo img,
+  .about-detailsThree img {
+    margin: 0;
+    width: 100%;
+  }
 }
 
 .faq_main {
