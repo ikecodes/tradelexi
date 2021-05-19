@@ -1437,11 +1437,238 @@ textarea {
 
 .search__result i {
   font-size: 2rem;
-  color: #fe9900;
+  color: yellow;
 }
 
 .search__result h4 {
   display: inline-block;
+  font-size: 1.5rem;
+}
+
+.vendor__category {
+  padding: 2rem 0;
+}
+
+.vendor__category a:link, .vendor__category a:visited {
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+.vendor__category a:hover, .vendor__category a:active {
+  color: #fe9900;
+}
+
+.vendor__category span {
+  color: black;
+  padding: 0 0.5rem;
+}
+
+.vendor__icon-star {
+  color: yellow;
+}
+
+.vendor__icon-location {
+  margin-right: 0.5rem;
+}
+
+.vendor__details {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+}
+
+.vendor__details--1 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: min-content 1fr;
+      grid-template-columns: -webkit-min-content 1fr;
+      grid-template-columns: min-content 1fr;
+  -ms-grid-rows: (1fr)[4];
+      grid-template-rows: repeat(4, 1fr);
+  gap: 0.5rem;
+}
+
+.vendor__details--1 img {
+  width: 5rem;
+  border-radius: 50%;
+  grid-row: 1/-1;
+  margin-right: 1rem;
+}
+
+.vendor__details--1 h4,
+.vendor__details--1 p {
+  display: inline;
+  font-size: 1.2rem;
+}
+
+.vendor__details--1 i {
+  font-size: 1.2rem;
+}
+
+.vendor__details--2 h1 {
+  text-transform: capitalize;
+}
+
+.vendor__details--2 p {
+  font-size: 1.5rem;
+}
+
+.vendor__details--3-whatsapp {
+  background-color: #6cbf4e;
+}
+
+.vendor__details--3-call {
+  background-color: #fe9900;
+}
+
+.vendor__details--3-rate {
+  background-color: #4343ef;
+}
+
+.vendor__details--3 div {
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  width: 50%;
+  height: 5rem;
+  border-radius: 1rem;
+  margin: 2rem;
+  color: white;
+  text-transform: capitalize;
+  font-size: 2rem;
+}
+
+.vendor__details--3 a:link, .vendor__details--3 a:visited {
+  text-decoration: none;
+}
+
+.vendor__portfolio {
+  padding: 2rem 0;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 3rem;
+}
+
+.vendor__portfolio img {
+  width: 25rem;
+}
+
+.vendor__services__offered {
+  text-transform: capitalize;
+}
+
+.vendor__services__offered table {
+  border: 1px solid #fe9900;
+  text-align: center;
+  width: 30rem;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.vendor__services__offered th {
+  font-size: 1.5rem;
+  padding-bottom: 1.2rem;
+}
+
+.vendor__services__offered td {
+  font-size: 1.3rem;
+}
+
+.vendor__services__offered td:not(:last-child) {
+  padding-bottom: 1.2rem;
+}
+
+.vendor__services__jobs {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  justify-items: center;
+  row-gap: 2rem;
+}
+
+.vendor__jobs {
+  text-transform: capitalize;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.vendor__jobs h1 {
+  margin-bottom: 1.5rem;
+}
+
+.vendor__jobs ul {
+  list-style: square;
+}
+
+.vendor__jobs li {
+  font-size: 2rem;
+}
+
+.vendor__reviews {
+  margin: 2rem 0;
+}
+
+.vendor__reviews-box {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2rem;
+}
+
+.vendor__review {
+  background-color: #fe9900;
+  color: #fff;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: min-content 1fr 1fr;
+      grid-template-columns: -webkit-min-content 1fr 1fr;
+      grid-template-columns: min-content 1fr 1fr;
+  -ms-grid-rows: min-content 1fr;
+      grid-template-rows: -webkit-min-content 1fr;
+      grid-template-rows: min-content 1fr;
+  border-radius: 1rem;
+  padding: 1.3rem;
+}
+
+.vendor__review__img {
+  width: 4rem;
+  border-radius: 50%;
+  margin-right: 1.3rem;
+}
+
+.vendor__review__rating {
+  font-size: 1.5rem;
+  -ms-grid-column-align: start;
+      justify-self: start;
+  text-transform: capitalize;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.vendor__review__name {
+  font-size: 1.5rem;
+  -ms-grid-column-align: start;
+      justify-self: start;
+  text-transform: capitalize;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.vendor__review__description {
+  margin-top: 1.5rem;
+  grid-column: 1/-1;
   font-size: 1.5rem;
 }
 /*# sourceMappingURL=main.css.map */

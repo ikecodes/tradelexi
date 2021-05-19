@@ -1,0 +1,181 @@
+.vendor__category {
+  padding: 2rem 0;
+  & a {
+    &:link,
+    &:visited {
+      text-transform: capitalize;
+      text-decoration: none;
+    }
+    &:hover,
+    &:active {
+      color: $color-primary-1;
+    }
+  }
+  & span {
+    color: black;
+    padding: 0 0.5rem;
+  }
+}
+
+.vendor {
+  &__icon-star {
+    color: yellow;
+  }
+  &__icon-location {
+    margin-right: 0.5rem;
+  }
+
+  &__details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  }
+  &__details--1 {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 0.5rem;
+    & img {
+      width: 5rem;
+      border-radius: 50%;
+      grid-row: 1/-1;
+      margin-right: 1rem;
+    }
+    & h4,
+    p {
+      display: inline;
+      font-size: 1.2rem;
+    }
+    & i {
+      font-size: 1.2rem;
+    }
+  }
+  &__details--2 {
+    & h1 {
+      text-transform: capitalize;
+    }
+    & p {
+      font-size: 1.5rem;
+    }
+  }
+  &__details--3 {
+    &-whatsapp {
+      background-color: #6cbf4e;
+    }
+    &-call {
+      background-color: $color-primary-1;
+    }
+    &-rate {
+      background-color: $color-secondary;
+    }
+    & div {
+      display: grid;
+      place-content: center;
+      width: 50%;
+      height: 5rem;
+      //   background-color: red;
+      border-radius: 1rem;
+      margin: 2rem;
+      color: white;
+      text-transform: capitalize;
+      font-size: 2rem;
+    }
+    & a {
+      &:link,
+      &:visited {
+        text-decoration: none;
+      }
+    }
+  }
+  &__portfolio {
+    padding: 2rem 0;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 3rem;
+    & img {
+      width: 25rem;
+    }
+  }
+  &__services__offered {
+    // font-size: 2.5rem;
+    text-transform: capitalize;
+    & table {
+      border: 1px solid $color-primary-1;
+      text-align: center;
+      width: 30rem;
+      padding: 2rem;
+      border-radius: 1rem;
+    }
+    & th {
+      //   text-align: start;
+      font-size: 1.5rem;
+      padding-bottom: 1.2rem;
+    }
+    & td {
+      font-size: 1.3rem;
+    }
+    & td:not(:last-child) {
+      padding-bottom: 1.2rem;
+    }
+  }
+  &__services__jobs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    justify-items: center;
+    row-gap: 2rem;
+  }
+  &__jobs {
+    text-transform: capitalize;
+    align-self: center;
+    & h1 {
+      margin-bottom: 1.5rem;
+    }
+    & ul {
+      list-style: square;
+    }
+    & li {
+      font-size: 2rem;
+    }
+  }
+  &__reviews {
+    margin: 2rem 0;
+  }
+  &__reviews-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+  }
+  &__review {
+    background-color: $color-primary-1;
+    color: #fff;
+    display: grid;
+    grid-template-columns: min-content 1fr 1fr;
+    grid-template-rows: min-content 1fr;
+    border-radius: 1rem;
+    padding: 1.3rem;
+
+    &__img {
+      width: 4rem;
+      border-radius: 50%;
+      margin-right: 1.3rem;
+    }
+    &__rating {
+      font-size: 1.5rem;
+      justify-self: start;
+      text-transform: capitalize;
+      align-self: center;
+    }
+    &__name {
+      font-size: 1.5rem;
+      justify-self: start;
+      text-transform: capitalize;
+      align-self: center;
+    }
+    &__description {
+      margin-top: 1.5rem;
+      grid-column: 1/-1;
+      font-size: 1.5rem;
+    }
+  }
+}
