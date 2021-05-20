@@ -1265,7 +1265,7 @@ textarea {
   margin: 0 auto;
   -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
           box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
-  padding: 10rem 2rem 0;
+  padding: 10rem 1.5rem 10rem;
 }
 
 .categories_form {
@@ -1354,6 +1354,167 @@ textarea {
   height: 10rem;
   background-color: #fe9900;
   color: #7b61ff;
+}
+
+.subscription {
+  color: #fff;
+}
+
+.subscription h1 {
+  text-transform: capitalize;
+  color: #7b61ff;
+  padding: 2rem 0;
+}
+
+.subscription h2 {
+  text-transform: capitalize;
+  text-align: center;
+  color: #7b61ff;
+  padding: 2rem 0;
+}
+
+.subscription p {
+  text-transform: capitalize;
+  color: #000;
+  padding: 2rem 0;
+  font-size: 1.4rem;
+}
+
+.subscription p {
+  text-transform: capitalize;
+  padding: 2rem 0;
+}
+
+.subscription h2 {
+  text-transform: capitalize;
+  padding: 1rem 0;
+}
+
+.subscription__free {
+  width: 100%;
+  margin: 2rem 0;
+  background-color: #7b61ff;
+  border-radius: 1rem;
+  padding: 1.5rem;
+}
+
+.subscription__free h1 {
+  color: #fff;
+}
+
+.subscription__free p {
+  font-size: 1.5rem;
+}
+
+.subscription__standard {
+  width: 100%;
+  margin: 2rem 0;
+  background-color: #fe9900;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: minmax(min-content, 1fr) 1fr;
+      grid-template-columns: minmax(-webkit-min-content, 1fr) 1fr;
+      grid-template-columns: minmax(min-content, 1fr) 1fr;
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+}
+
+.subscription__standard h1 {
+  color: #fff;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.subscription__standard h2 {
+  color: #fff;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.subscription__standard ul {
+  list-style: square;
+  margin-left: 2rem;
+}
+
+.subscription__standard li {
+  font-size: 1.5rem;
+}
+
+.subscription__standard p {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.subscription__standard button {
+  border: none;
+  color: #000;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.subscription__premium {
+  width: 100%;
+  margin: 2rem 0;
+  background-color: #62b145;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: minmax(min-content, 1fr) 1fr;
+      grid-template-columns: minmax(-webkit-min-content, 1fr) 1fr;
+      grid-template-columns: minmax(min-content, 1fr) 1fr;
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+}
+
+.subscription__premium h1 {
+  color: #fff;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.subscription__premium h2 {
+  color: #fff;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.subscription__premium ul {
+  list-style: square;
+  margin-left: 2rem;
+}
+
+.subscription__premium li {
+  font-size: 1.5rem;
+}
+
+.subscription__premium p {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.subscription__premium button {
+  border: none;
+  color: #000;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.subscription__button {
+  border: none;
+  border-radius: 1rem;
+  background-color: #7b61ff;
+  color: #fff;
+  padding: 2rem 4rem;
+  text-transform: uppercase;
+  font-size: 2rem;
+  cursor: pointer;
 }
 
 .search__results__text {
@@ -1670,5 +1831,203 @@ textarea {
   margin-top: 1.5rem;
   grid-column: 1/-1;
   font-size: 1.5rem;
+}
+
+.stats {
+  background-color: rgba(123, 97, 255, 0.5);
+  border-radius: 1rem;
+}
+
+.stats__header {
+  margin: 2rem 0;
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+}
+
+.stats__box {
+  padding: 1.2rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(35rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  gap: 3rem;
+}
+
+@media only screen and (max-width: 500px) {
+  .stats__box {
+    -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  }
+}
+
+.stat {
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 2rem;
+  -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.5rem;
+}
+
+.stat__icon {
+  font-size: 1.5rem;
+  margin-left: 1.2rem;
+}
+
+.manage-sub h1 {
+  font-size: 2rem;
+  text-transform: capitalize;
+  padding: 2rem 0;
+}
+
+.manage-sub__header {
+  font-size: 1.5rem;
+  color: #7b61ff;
+  text-transform: capitalize;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.manage-sub__box {
+  margin-top: 2rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 3rem;
+}
+
+.manage-sub__box--1 {
+  background-color: #7b61ff;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+.manage-sub__box--1 h2 {
+  text-align: center;
+  color: #fff;
+  text-transform: capitalize;
+  margin: 1.5rem 0;
+}
+
+.manage-sub__box--1 h3 {
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+.manage-sub__box--1 p {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.manage-sub__box--2 h2 {
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
+}
+
+.manage-sub__box--2__days {
+  margin: 4rem 0;
+}
+
+.manage-sub__box--2__days span {
+  font-size: 5rem;
+  color: #4f4f4f;
+  border: 1px solid #000;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.manage-sub__box--2__days p {
+  display: inline;
+  font-size: 1.2rem;
+}
+
+.manage-sub__box--2 button {
+  border: none;
+  text-transform: uppercase;
+  padding: 2rem 4rem;
+  margin: 1rem 0;
+  border-radius: 1rem;
+  background-color: #7b61ff;
+  color: #fff;
+}
+
+.manage-sub__box--2 p {
+  font-size: 1.3rem;
+}
+
+.manage-sub__box--3 {
+  background-color: #fe9900;
+  padding: 2rem;
+  border-radius: 1rem;
+  color: #fff;
+}
+
+.manage-sub__box--3 h2 {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.manage-sub__box--3 ul {
+  margin-left: 1.5rem;
+}
+
+.manage-sub__box--3 li {
+  list-style: square;
+  margin-bottom: 1.2rem;
+  font-size: 1.2rem;
+}
+
+.manage-sub__box--3 button {
+  border: none;
+  width: 100%;
+  font-size: 1.3rem;
+  padding: 2rem 4rem;
+  cursor: pointer;
+}
+
+.manage-sub__box--4 {
+  background-color: #7b61ff;
+  padding: 2rem;
+  border-radius: 1rem;
+  color: #fff;
+}
+
+.manage-sub__box--4 h2 {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.manage-sub__box--4 ul {
+  margin-left: 1.5rem;
+}
+
+.manage-sub__box--4 li {
+  list-style: square;
+  margin-bottom: 1.2rem;
+  font-size: 1.2rem;
+}
+
+.manage-sub__box--4 button {
+  border: none;
+  width: 100%;
+  font-size: 1.3rem;
+  padding: 2rem 4rem;
+  cursor: pointer;
 }
 /*# sourceMappingURL=main.css.map */
